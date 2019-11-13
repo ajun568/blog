@@ -6,7 +6,7 @@ interests: '" 热情且冷淡, 敏感且迟钝 "'
 content: ['前端攻城狮', '程序猿', '二次元', '宠物爱好者']
 socials:
 - title: github
-  link: https://github.com/Lionad-Morotar
+  link: https://github.com/ajun568
 - title: codepen
   link: 'https://codepen.io/ajun568'
 - title: juejin

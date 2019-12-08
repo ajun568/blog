@@ -2,8 +2,8 @@
 layout: HomePage
 description: '前端攻城狮'
 head: "YiJun's Blog"
-interests: '" 热情且冷淡, 敏感且迟钝 "'
-content: ['前端攻城狮', '程序猿', '二次元', '宠物爱好者']
+interests: '" 哀其不幸，怒其不争 "'
+content: ['基于搜索引擎的复制粘贴攻城狮']
 socials:
 - title: github
   link: https://github.com/ajun568

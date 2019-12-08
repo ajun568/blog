@@ -8,6 +8,9 @@ module.exports = {
   // page config
   title: 'YiJun Blog',
   description: "yijun's Blogs",
+  head: [
+    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "./deer.png"}]
+  ],
 
   // theme config
   themeConfig: {

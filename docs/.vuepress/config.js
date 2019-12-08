@@ -40,6 +40,13 @@ function getSidebar(name) {
           'js/js执行机制',
           'js/万物皆对象'
         ]
+      },
+      {
+        title: '函数之美',
+        collapsable: true,
+        children: [
+          'fn/柯里化与偏函数'
+        ]
       }
     ]
   }

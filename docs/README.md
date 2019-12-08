@@ -15,5 +15,5 @@ socials:
   link: 'https://www.zhihu.com/people/jiao-he-gu-cheng-fei/activities'
 - title: email
   link: 'mailto:m18846086393@163.com'
-footer: MIT Licensed | Copyright © 2018-present Evan You
+footer: 黑ICP备17009694号-3 | Copyright © 2019 Deeruby. All Rights Reserved 
 ---

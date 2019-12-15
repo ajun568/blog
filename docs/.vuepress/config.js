@@ -59,6 +59,14 @@ function getSidebar(name) {
         children: [
           'fn/柯里化与偏函数'
         ]
+      },
+      {
+        title: 'fancy',
+        collapsable: false,
+        children: [
+          'fancy/fancy',
+          'fancy/原型文档'
+        ]
       }
     ]
   }

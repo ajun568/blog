@@ -454,7 +454,7 @@ export default {
 		}
 	}
 
-@media screen and (max-width: 320px) {
+@media screen and (max-height: 600px) and (min-height: 500px) {
   .container {
 		margin-top: 100px;
 		width: 95vw;

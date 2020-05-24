@@ -1,4 +1,16 @@
-# YiJun's Blog
+---
+title: '博客简介'
+keywords: "前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、JavaScript、vue、react、es6、uni-app、nodejs"
+description: 'deeruby.com 是 yijun 的博客专属地址，用于记录前端相关问题'
+date: '2019-10-12'
+updated: '2020-05-24'
+tags:
+ - 'deeruby 主页'
+---
+
+# <h1 style="text-align: center; margin-bottom: 40px;">博客简介</h1>
+
+<ArticlesHome/>
 
 >本是青灯不归客，却因浊酒恋红尘
 

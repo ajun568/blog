@@ -7,3 +7,4 @@ dist/
 .vuepress/dist/
 .DS_Store
 .idea
+.temp

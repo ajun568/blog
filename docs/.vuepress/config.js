@@ -26,6 +26,9 @@ module.exports = {
 
   // 主题配置
   themeConfig: {
+    themeConfig: {
+      logo: './public/deer.png',
+    },
     nav: [
       { text: "Home", link: "/" },
       { text: "Contents", link: "/articles/" }

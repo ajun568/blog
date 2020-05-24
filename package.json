@@ -5,7 +5,7 @@
   "author": "yijun <ajun568@qq.com>",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh"
   },

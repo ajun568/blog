@@ -10,8 +10,10 @@
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "less": "^3.10.3",
-    "less-loader": "^5.0.0"
+    "less-loader": "^5.0.0",
+    "pm2": "^4.4.0"
   },
   "devDependencies": {
     "vuepress": "^1.5.0"

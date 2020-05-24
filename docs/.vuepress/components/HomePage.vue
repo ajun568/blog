@@ -417,7 +417,6 @@ export default {
 		font-size: 12px;
 	}
 
-
 	.footer {
 		position: absolute;
 		bottom: 30px;
@@ -454,4 +453,44 @@ export default {
 			background-position: -100% 0
 		}
 	}
+
+@media screen and (max-width: 320px) {
+  .container {
+		margin-top: 100px;
+		width: 95vw;
+		height: auto;
+		.bottom {
+			.content li {
+				font-size: 18px;
+			}
+			.desc {
+				display: none;
+			}
+			.link {
+				padding: 0;
+			}
+		}
+	}
+	.enter {
+		margin-top: 40px;
+	}
+}
+@media screen and (max-height: 730px) and (min-height: 600px) {
+	.container {
+		margin-top: 110px;
+		width: 95vw;
+		height: auto;
+		.bottom {
+			.content {
+				font-size: 18px;
+			}
+			.link {
+				padding: 0;
+			}
+		}
+	}
+	.enter {
+		margin-top: 40px;
+	}
+}
 </style>

@@ -1,18 +1,30 @@
 // 配置文件的入口文件
 module.exports = {
 
-  // develop config
+  // 基础配置
   base: "/",
+  port: 8080,
   dest: "./dist",
 
-  // page config
+  // 页面配置
   title: 'YiJun Blog',
   description: "yijun's Blogs",
   head: [
-    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "./deer.png"}]
+    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/deer.png"}]
   ],
 
-  // theme config
+  // 缓存离线内容
+  serviceWorker: true,
+  
+  // markdown 配置
+  markdown: {
+    anchor: { permalink: true },
+    toc: {
+      includeLevel: [1, 2]
+    }
+  },
+
+  // 主题配置
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
@@ -25,7 +37,7 @@ module.exports = {
   }
 }
 
-// getSidebar
+// 侧边栏配置
 function getSidebar(name) {
   const sidebarConfigs = {
     articles: [

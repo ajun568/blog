@@ -3,6 +3,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 node_modules/
-dist
-.vuepress/dist
+dist/
+.vuepress/dist/
 .DS_Store
+.idea

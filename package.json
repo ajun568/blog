@@ -11,5 +11,8 @@
   "dependencies": {
     "less": "^3.10.3",
     "less-loader": "^5.0.0"
+  },
+  "devDependencies": {
+    "vuepress": "^1.5.0"
   }
 }

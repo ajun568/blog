@@ -3,11 +3,11 @@
     <section class="flex">
       <div class="flip mr20">
         <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-          <h1 class="text-shadow card-title">模块标题</h1>
+          <h1 class="text-shadow card-title">CSS～点缀你的美</h1>
         </div>
         <div class="back">
-          <h2>内容标题</h2>
-          <p>这里是有待构思的内容，这里是有待构思的内容，这里是有待构思的内容，这里是有待构思的内容，这里是有待构思的内容...</p>
+          <h2>CSS～点缀你的美</h2>
+          <p>绿叶是鲜花的衬托，鲜花是绿叶的点缀。这里有繁茂的森林，亦有浩瀚的海洋。走进这里，你可以放开自我，只为抒写属于自己的美。</p>
         </div>
       </div>
       <div class="flip">
@@ -93,7 +93,7 @@ export default {
       text-align: center;
       font-size: 28px;
       line-height: 28px;
-      margin: 15px 0 0;
+      margin: 20px 0 0;
       border: none;
     }
     p {

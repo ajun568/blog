@@ -45,7 +45,7 @@ function getSidebar(name) {
   const sidebarConfigs = {
     articles: [
       {
-        title: '服务器，让你的代码环游世界',
+        title: '服务器～连接世界的桥梁',
         collapsable: true,
         children: [
           'service/git',
@@ -54,7 +54,7 @@ function getSidebar(name) {
         ]
       },
       {
-        title: 'css ~ 装饰你的美',
+        title: 'css~点缀你的美',
         collapsable: true,
         children: [
           'css/css小特性'

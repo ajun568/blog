@@ -12,16 +12,6 @@ tags:
 
 <ArticlesHome/>
 
->本是青灯不归客，却因浊酒恋红尘
+## <h1 style="text-align: center; margin-bottom: 40px; border-bottom: none;">友情链接</h1>
 
-### 博客简介
-
-```
-前端为主，其他为辅
-用来记录自己遇到的问题或看到的好的文章
-后续会补一些非技术的内容，如读书感悟，杂谈或随记等
-```
-
-### 写给自己
-
->用心记录生活，用爱记录美好
+<FriendLinkCard/>

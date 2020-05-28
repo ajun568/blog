@@ -7,7 +7,7 @@ module.exports = {
   dest: "./dist",
 
   // 页面配置
-  title: 'YiJun Blog',
+  title: 'Deeruby',
   description: "yijun's Blogs",
   head: [
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/deer.png"}]
@@ -18,7 +18,6 @@ module.exports = {
   
   // markdown 配置
   markdown: {
-    anchor: { permalink: true },
     toc: {
       includeLevel: [1, 2]
     }
@@ -45,7 +44,7 @@ function getSidebar(name) {
   const sidebarConfigs = {
     articles: [
       {
-        title: '服务器～连接世界的桥梁',
+        title: '服务器~连接世界的桥梁',
         collapsable: true,
         children: [
           'service/git',
@@ -61,7 +60,7 @@ function getSidebar(name) {
         ]
       },
       {
-        title: 'js ～ 为你的代码添砖加瓦',
+        title: 'js~让代码“动”起来',
         collapsable: true,
         children: [
           'js/js执行机制',
@@ -69,15 +68,15 @@ function getSidebar(name) {
         ]
       },
       {
-        title: '函数之美',
+        title: '算法~舞动你的思维',
         collapsable: true,
         children: [
           'fn/柯里化与偏函数'
         ]
       },
       {
-        title: 'fancy',
-        collapsable: false,
+        title: '奇思妙想小项目',
+        collapsable: true,
         children: [
           'fancy/fancy',
           'fancy/原型文档'

@@ -2,21 +2,81 @@
   <div>
     <section class="flex">
       <div class="flip mr20">
-        <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-          <h1 class="text-shadow card-title">服务器～连接世界的桥梁</h1>
+        <div class="front" :style="`background-image: url(${$withBase('/image/card_bg.jpg')})`">
+          <h1 class="text-shadow card-title">服务器~连接世界的桥梁</h1>
         </div>
         <div class="back">
-          <h2>服务器～连接世界的桥梁</h2>
+          <h2>服务器~连接世界的桥梁</h2>
           <p>酒好不怕巷子深，带着自己的作品尽情放飞自我吧。在这里，星星会说话，石头会开花，在这里，你就是夜空中最美的烟火。</p>
         </div>
       </div>
       <div class="flip">
-        <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-          <h1 class="text-shadow card-title">CSS～点缀你的美</h1>
+        <div class="front" :style="`background-image: url(${$withBase('/image/card_bg.jpg')})`">
+          <h1 class="text-shadow card-title">CSS~点缀你的美</h1>
         </div>
         <div class="back">
-          <h2>CSS～点缀你的美</h2>
+          <h2>CSS~点缀你的美</h2>
           <p>绿叶是鲜花的衬托，鲜花是绿叶的点缀。这里有繁茂的森林，亦有浩瀚的海洋。走进这里，你可以放开自我，只为抒写属于自己的美。</p>
+        </div>
+      </div>
+    </section>
+    <section class="flex">
+      <div class="flip mr20">
+        <div class="front" :style="`background-image: url(${$withBase('/image/card_bg.jpg')})`">
+          <h1 class="text-shadow card-title">js~让代码“动”起来</h1>
+        </div>
+        <div class="back">
+          <h2>js~让代码“动”起来</h2>
+          <p>悬赏文案，可以是几句优美且贴切的句子，也可以是一个简短且符合题意的搞笑小故事。</p>
+        </div>
+      </div>
+      <div class="flip">
+        <div class="front" :style="`background-image: url(${$withBase('/image/card_bg.jpg')})`">
+          <h1 class="text-shadow card-title">框架~让代码一步登天</h1>
+        </div>
+        <div class="back">
+          <h2>Vue / React / uni-app</h2>
+          <p>悬赏文案，可以是几句优美且贴切的句子，也可以是一个简短且符合题意的搞笑小故事。</p>
+        </div>
+      </div>
+    </section>
+    <section class="flex">
+      <div class="flip mr20">
+        <div class="front" :style="`background-image: url(${$withBase('/image/card_bg.jpg')})`">
+          <h1 class="text-shadow card-title">天马行空之功能小记</h1>
+        </div>
+        <div class="back">
+          <h2>天马行空之功能小记</h2>
+          <p>悬赏文案，可以是几句优美且贴切的句子，也可以是一个简短且符合题意的搞笑小故事。</p>
+        </div>
+      </div>
+      <div class="flip">
+        <div class="front" :style="`background-image: url(${$withBase('/image/card_bg.jpg')})`">
+          <h1 class="text-shadow card-title">算法~舞动你的思维</h1>
+        </div>
+        <div class="back">
+          <h2>函数 / 算法</h2>
+          <p>悬赏文案，可以是几句优美且贴切的句子，也可以是一个简短且符合题意的搞笑小故事。</p>
+        </div>
+      </div>
+    </section>
+    <section class="flex">
+      <div class="flip mr20">
+        <div class="front" :style="`background-image: url(${$withBase('/image/card_bg.jpg')})`">
+          <h1 class="text-shadow card-title">nodejs~走向全栈的第一步</h1>
+        </div>
+        <div class="back">
+          <h2>nodejs~走向全栈的第一步</h2>
+          <p>悬赏文案，可以是几句优美且贴切的句子，也可以是一个简短且符合题意的搞笑小故事。</p>
+        </div>
+      </div>
+      <div class="flip">
+        <div class="front" :style="`background-image: url(${$withBase('/image/card_bg.jpg')})`">
+          <h1 class="text-shadow card-title">数据库~你的专属大脑</h1>
+        </div>
+        <div class="back">
+          <h2>数据库~你的专属大脑</h2>
+          <p>悬赏文案，可以是几句优美且贴切的句子，也可以是一个简短且符合题意的搞笑小故事。</p>
         </div>
       </div>
     </section>

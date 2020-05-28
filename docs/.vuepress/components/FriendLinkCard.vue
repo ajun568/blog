@@ -123,6 +123,7 @@ export default {
       text-transform: uppercase;
       color: #a2a2a2;
       margin-top: 5px;
+      border-bottom: none;
     }
       .read-more {
       text-align: right;

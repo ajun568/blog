@@ -1,3 +1,11 @@
+---
+title: 'linux基础命令'
+keywords: "前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、Linux、linux、linux基础命令"
+description: 'Deeruby: linux基础命令页面用于记录linux的使用，常用的linux命令'
+date: '2019-12-09'
+updated: '2020-05-29'
+---
+
 # linux基础命令
 > 这是一篇关于Linux基础命令的文档 想系统学习Linux命令的出门左拐
 * 创建文件夹

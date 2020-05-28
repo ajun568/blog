@@ -1,3 +1,11 @@
+---
+title: 'css小特性'
+keywords: "前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、css、选中样式高亮、识别页面结构、文字竖版排列、文本两端对齐、单行文本省略号、倒叙文本、GPU加速、ios弹性滚动、禁止事件触发"
+description: 'Deeruby: css小特性页面用于记录一些css的使用，方便快捷，具体如下：选中样式高亮、识别页面结构、文字竖版排列、文本两端对齐、单行文本省略号、倒叙文本、GPU加速、ios弹性滚动、禁止事件触发'
+date: '2019-11-12'
+updated: '2020-05-29'
+---
+
 # css小特性
 
 > 海纳百川，有容乃大；壁立千仞，无欲则刚

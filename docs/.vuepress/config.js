@@ -48,9 +48,10 @@ function getSidebar(name) {
         title: '服务器~连接世界的桥梁',
         collapsable: true,
         children: [
+          'service/搭建服务器',
+          'service/浏览器网络状态',
           'service/git',
           'service/Linux基础命令',
-          'service/搭建服务器'
         ]
       },
       {

@@ -1,9 +1,11 @@
 ---
 title: 'git - 命令合集'
-keywords: "前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、git、git命令、常用命令"
 description: 'Deeruby: git - 命令合集 页面用于记录git的使用，常用git命令'
 date: '2019-12-09'
 updated: '2020-05-29'
+meta:
+- name: keywords
+  content: 前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、git、git命令、常用命令
 ---
 
 # git - 命令合集

@@ -1,9 +1,11 @@
 ---
 title: 'linux基础命令'
-keywords: "前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、Linux、linux、linux基础命令"
 description: 'Deeruby: linux基础命令页面用于记录linux的使用，常用的linux命令'
 date: '2019-12-09'
 updated: '2020-05-29'
+meta:
+- name: keywords
+  content: 前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、Linux、linux、linux基础命令
 ---
 
 # linux基础命令

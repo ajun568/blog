@@ -1,9 +1,11 @@
 ---
 title: 'js执行机制'
-keywords: "前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、js、js执行机制、单线程、定时器、Promise、setTimeout、setInterval、宏任务、微任务"
 description: 'Deeruby: js执行机制页面详细讲述了js的执行过程，在宏任务和微任务同时存在时的执行结果。'
 date: '2019-11-12'
 updated: '2020-05-29'
+meta:
+- name: keywords
+  content: 前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、js、js执行机制、单线程、定时器、Promise、setTimeout、setInterval、宏任务、微任务
 ---
 
 # js执行机制

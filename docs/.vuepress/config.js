@@ -49,9 +49,9 @@ function getSidebar(name) {
         collapsable: true,
         children: [
           'service/搭建服务器',
-          'service/浏览器网络状态',
+          'js/浏览器网络状态',
           'service/git',
-          'service/Linux基础命令',
+          'service/Linux基础命令'
         ]
       },
       {

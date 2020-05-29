@@ -10,7 +10,8 @@ module.exports = {
   title: 'Deeruby',
   description: "yijun's Blogs",
   head: [
-    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/deer.png"}]
+    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/deer.png"}],
+    ['meta', { name: 'baidu-site-verification', content: 'qXjHGb0OWV' }]
   ],
 
   // 缓存离线内容

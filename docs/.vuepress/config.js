@@ -43,6 +43,7 @@ module.exports = {
     lastUpdated: 'Last Updated'
   },
 
+  // 谷歌sitemap
   plugins: {
     'sitemap': {
       hostname: 'https://deeruby.com',
@@ -85,6 +86,13 @@ function getSidebar(name) {
         collapsable: true,
         children: [
           'fn/柯里化与偏函数'
+        ]
+      },
+      {
+        title: '杂文小序',
+        collapsable: true,
+        children: [
+          'other/网站收藏夹'
         ]
       },
       {

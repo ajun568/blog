@@ -2,7 +2,7 @@
 title: 'git - 命令合集'
 description: 'Deeruby: git - 命令合集 页面用于记录git的使用，常用git命令'
 date: '2019-12-09'
-updated: '2020-05-29'
+updated: '2020-05-30'
 meta:
 - name: keywords
   content: 前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、git、git命令、常用命令
@@ -102,3 +102,7 @@ git checkout develop
 git pull origin develop
 git merge feature/xxx/xxx <resolve the conflict>
 ```
+
+[推荐一篇不错的git文章，妈妈再也不用担心我回滚master分支了](https://www.internalpointers.com/post/squash-commits-into-one-git)
+
+[彻底搞懂Git-Rebase](http://jartto.wang/2018/12/11/git-rebase)

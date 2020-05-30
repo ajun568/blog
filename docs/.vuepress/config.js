@@ -12,13 +12,15 @@ module.exports = {
   head: [
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/deer.png"}],
     ['meta', { name: 'baidu-site-verification', content: 'qXjHGb0OWV' }],
-    ['meta', { name: '360-site-verification', content: 'd0440fd87feebbf9da38fc40e9531753' }]
-    ['script', {}, `
-      (function(){
-        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
-        document.write('<script src="' + src + '" id="sozz"></script>');
-      })();
-    `]
+    ['meta', { name: '360-site-verification', content: 'd0440fd87feebbf9da38fc40e9531753' }],
+    ['script', { defer: 'defer' }, 
+      `
+        (function(){
+          var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+          document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+      `
+    ]
   ],
 
   // 缓存离线内容

@@ -11,7 +11,8 @@ module.exports = {
   description: "yijun's Blogs",
   head: [
     ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/deer.png"}],
-    ['meta', { name: 'baidu-site-verification', content: 'qXjHGb0OWV' }]
+    ['meta', { name: 'baidu-site-verification', content: 'qXjHGb0OWV' }],
+    ['meta', { name: '360-site-verification', content: 'd0440fd87feebbf9da38fc40e9531753' }]
   ],
 
   // 缓存离线内容

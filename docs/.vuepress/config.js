@@ -43,12 +43,12 @@ module.exports = {
     lastUpdated: 'Last Updated'
   },
 
-  plugins: [
-    'sitemap', {
+  plugins: {
+    'sitemap': {
       hostname: 'https://deeruby.com',
       exclude: ['/404.html']
     }
-  ]
+  }
 }
 
 // 侧边栏配置

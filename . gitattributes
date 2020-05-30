@@ -1,1 +1,3 @@
-*.sh linguist-language=vue
+*.sh linguist-language=Vue
+*.h linguist-language=Vue
+*.m linguist-language=Vue

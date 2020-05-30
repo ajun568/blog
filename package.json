@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "hexo-generator-sitemap": "^2.0.0",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
     "pm2": "^4.4.0"
   },
   "devDependencies": {
-    "vuepress": "^1.5.0"
+    "vuepress": "^1.5.0",
+    "vuepress-plugin-sitemap": "^2.3.1"
   }
 }

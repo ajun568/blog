@@ -45,7 +45,8 @@ module.exports = {
 
   plugins: [
     'sitemap', {
-      hostname: 'https://deeruby.com'
+      hostname: 'https://deeruby.com',
+      exclude: ['/404.html']
     }
   ]
 }

@@ -1,5 +1,4 @@
-*.sh linguist-language=Vue
-*.shell linguist-language=Vue
-Shell linguist-language=Vue
-*.h linguist-language=Vue
-*.m linguist-language=Vue
+*.js linguist-language=vue
+*.css linguist-language=vue
+*.html linguist-language=vue
+*.sh linguist-language=vue

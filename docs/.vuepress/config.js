@@ -44,13 +44,9 @@ module.exports = {
   },
 
   plugins: [
-    ["sitemap", {
-        "hostname": "https://deeruby.com",
-        "exclude": ['/404.html'],
-        "dateFormatter": time => {
-          return time
-        }
-    }]
+    'sitemap', {
+      hostname: 'https://deeruby.com'
+    }
   ]
 }
 

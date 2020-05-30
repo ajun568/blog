@@ -41,7 +41,17 @@ module.exports = {
       '/articles/': getSidebar('articles')
     },
     lastUpdated: 'Last Updated'
-  }
+  },
+
+  plugins: [
+    ["sitemap", {
+        "hostname": "https://deeruby.com",
+        "exclude": ['/404.html'],
+        "dateFormatter": time => {
+          return time
+        }
+    }]
+  ]
 }
 
 // 侧边栏配置

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+
+<url>
+ <loc>https://github.com/ajun568</loc>
+ <priority>0.3</priority>
+ <lastmod>2020-05-29</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://juejin.im/user/5da6f4da6fb9a04e320a655f</loc>
+ <priority>0.3</priority>
+ <lastmod>2020-05-29</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://www.zhihu.com/people/jiao-he-gu-cheng-fei/activities</loc>
+ <priority>0.3</priority>
+ <lastmod>2020-05-29</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://codepen.io/ajun568</loc>
+ <priority>0.3</priority>
+ <lastmod>2020-05-29</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>https://deeruby.com</loc>
+ <priority>0.3</priority>
+ <lastmod>2020-05-29</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+<url>
+ <loc>mailto:m18846086393@163.com</loc>
+ <priority>0.3</priority>
+ <lastmod>2020-05-29</lastmod>
+ <changefreq>daily</changefreq>
+</url>
+
+</urlset>

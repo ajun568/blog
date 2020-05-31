@@ -103,6 +103,8 @@ git pull origin develop
 git merge feature/xxx/xxx <resolve the conflict>
 ```
 
+### 推荐文章
+
 [推荐一篇不错的git文章，妈妈再也不用担心我回滚master分支了](https://www.internalpointers.com/post/squash-commits-into-one-git)
 
 [彻底搞懂Git-Rebase](http://jartto.wang/2018/12/11/git-rebase)

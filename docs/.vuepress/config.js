@@ -63,7 +63,8 @@ function getSidebar(name) {
           'service/搭建服务器',
           'js/浏览器网络状态',
           'service/git',
-          'service/Linux基础命令'
+          'service/Linux基础命令',
+          'service/玩转github'
         ]
       },
       {

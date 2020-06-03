@@ -14,6 +14,10 @@ tags:
 
 <ArticlesHome/>
 
-### <h1 style="text-align: center; margin-bottom: 40px;">友情链接</h1>
+### <h1 style="text-align: center; margin-bottom: 40px;">合作伙伴</h1>
 
 <FriendLinkCard/>
+
+### <h1 style="text-align: center; margin-bottom: 40px;">友情链接</h1>
+
+<FriendLink/>

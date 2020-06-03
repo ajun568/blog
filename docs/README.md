@@ -1,6 +1,6 @@
 ---
 title: ''
-description: 'deeruby.com 是 yijun 的博客专属地址，用于记录前端相关问题'
+description: 'deeruby.com 是 yijun 的博客专属地址，用于记录前端相关问题，包括 服务器~连接世界的桥梁、CSS~点缀你的美、js~让代码“动”起来、框架~让代码一步登天、天马行空之功能小记、算法~舞动你的思维、nodejs~走向全栈的第一步、数据库~你的专属大脑 等'
 date: '2019-10-12'
 updated: '2020-05-26'
 layout: HomePage

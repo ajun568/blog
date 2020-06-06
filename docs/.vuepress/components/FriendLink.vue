@@ -9,6 +9,15 @@
         <div class="desc">Roki's Blog ～ https://blog.weekii.cn</div>
       </section>
     </a>
+    <a target="_blank" href="http://www.lionad.art">
+      <section class="friend-container mt20">
+        <div class="image-container">
+          <img :src="`${$withBase('/image/yunshu.gif')}`" alt="Roki's Blog">
+        </div>
+        <div class="name">Lionad</div>
+        <div class="desc">Lionad-Guirotar ～ http://www.lionad.art</div>
+      </section>
+    </a>
   </div>
 </template>
 
@@ -19,6 +28,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
+  .friend-container.mt20 {
+    margin-top: 20px;
+  }
   .friend-link {
     a {
       text-decoration: none;

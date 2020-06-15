@@ -90,6 +90,13 @@ function getSidebar(name) {
         ]
       },
       {
+        title: '框架~让代码一步登天',
+        collapsable: true,
+        children: [
+          'component/React爬坑指南'
+        ]
+      },
+      {
         title: '杂文小序',
         collapsable: true,
         children: [

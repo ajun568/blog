@@ -171,3 +171,125 @@ render();
 #### 🔗参考链接
 
 [react-router-config使用与路由鉴权](https://juejin.im/post/5e396af66fb9a07cd323c40d)
+
+## 接口拦截
+
+### 前期准备
+
+> yarn add axios
+
+### 任务细化
+
+创建三个文件，一个文件做请求拦截，这里监听接口 cancel 的状态及处理接口的统一报错，如 401、403、500等，或者协定的特殊code码的处理，更换session_id等操作。一个文件用来维护接口地址及接口名称。一个文件用来写接口。具体如下：
+
+<span style="color: #FF6600;">server.tsx</span>
+
+```js
+import axios from 'axios';
+
+let CancelToken = axios.CancelToken
+
+axios.create({
+  timeout: 10000,
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+  }
+})
+
+axios.interceptors.request.use(config => {
+  let requestName = ''
+  if (config.data) {
+    requestName = config.data.requestName 
+  }
+  if (config.params) {
+    requestName = config.params.requestName
+  }
+  
+  if (requestName) {
+    if (axios[requestName] && axios[requestName].cancel) {
+      axios[requestName].cancel()
+    }
+    config.cancelToken = new CancelToken(c => {
+        axios[requestName] = {}
+        axios[requestName].cancel = c
+    })
+  }
+  return config
+}, error => {
+  return Promise.reject(error)
+})
+
+axios.interceptors.response.use(
+  response => {
+    if (response.status === 200) {
+      const res = response.data
+      if (res.code === 401 || res.code === 403) {
+        window.location.href = "/login"
+        return
+      } else {
+        return response.data
+      }
+    }
+  },
+  error => {
+    return Promise.reject(error)
+  }
+)
+
+export default axios
+
+```
+
+<span style="color: #FF6600;">config.tsx</span>
+
+```js
+const HISTORY= 'http://118.31.57.194:56971/';
+
+const URL = {
+  // 登录
+  login: HISTORY + 'user/login',
+
+  // 注册
+  register: HISTORY + 'user/register'
+}
+
+export default URL
+```
+
+<span style="color: #FF6600;">api.tsx</span>
+
+<span style="color: 999;">这里注意 typescript 要定义接口注明类型</span>
+
+```js
+import $axios from './server';
+import baseUrl from './config';
+
+type Method =
+  | 'get' | 'GET'
+  | 'delete' | 'DELETE'
+  | 'head' | 'HEAD'
+  | 'options' | 'OPTIONS'
+  | 'post' | 'POST'
+  | 'put' | 'PUT'
+  | 'patch' | 'PATCH'
+
+interface interfaceObj {
+  url: string,
+  method: Method,
+  dataType: string,
+  contentType: string,
+  params: any
+}
+
+export function login(params: any) {
+  let obj: interfaceObj = {
+    url: baseUrl.login,
+    method: "post",
+    dataType: "json",
+    contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+    params: params
+  }
+  return $axios(obj)
+}
+
+```

@@ -2,22 +2,22 @@
   <div>
     <div class="friend-card">
       <div class="meta">
-        <div class="photo" :style="`background-image: url(${$withBase('/image/friend_link_1.jpg')})`"></div>
+        <div class="photo" :style="`background-image: url(${$withBase('/image/friend_link_2.jpg')})`"></div>
         <ul class="details">
           <li class="name"><a href="https://delpast.com" target="_blank">Delpast</a></li>
-          <li>旁观者</li>
+          <li>无来处</li>
           <li class="tags">
             <ul>
-              <li style="margin-right: 5px;"><a href="https://delpast.com/channel/5" target="_blank">技术杂谈</a></li>
-              <li><a href="https://delpast.com/channel/2" target="_blank">博客</a></li>
+              <li style="margin-right: 5px;"><a href="https://delpast.com/channel/CHANEL_266da2f23f984f5dbefe44bd55b3aae3" target="_blank">博客</a></li>
+              <li><a href="https://delpast.com/channel/CHANEL_4848a272a1614a428d64712f20d41fab" target="_blank">技术杂谈</a></li>
             </ul>
           </li>
         </ul>
       </div>
       <div class="description">
-        <h1>Delpast（星外孤月）</h1>
+        <h1>Delpast（无来处）</h1>
         <h2>Opening a door to the future</h2>
-        <p>本站主要用于博文记录，包括编程相关的技术知识和问题记录，或者分享一些个人故事心得，站长自以为是一个旁观者，目前尚在凡尘苦海的浅滩随波逐流，信奉天下皆白，唯我独黑。</p>
+        <p>本站是一个博客网站，主要用于博文记录，包括编程相关的技术知识和问题记录，或者分享一些个人故事心得。眼前的黑不是黑，你说的白是什么白。</p>
         <p class="read-more">
           <a href="https://delpast.com" target="_blank">Enter</a>
         </p>

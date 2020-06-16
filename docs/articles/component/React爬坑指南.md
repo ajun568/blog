@@ -170,4 +170,4 @@ render();
 
 #### 🔗参考链接
 
-* [react-router-config使用与路由鉴权](https://juejin.im/post/5e396af66fb9a07cd323c40d)
+[react-router-config使用与路由鉴权](https://juejin.im/post/5e396af66fb9a07cd323c40d)

@@ -1,3 +1,13 @@
+---
+title: 'React爬坑指南'
+description: 'Deeruby: 用于记录在使用React中遇到的问题或者使用过程中的一些封装，包括项目前期准备，antd更换主题色，路由鉴权，接口拦截等'
+date: '2019-06-01'
+updated: '2020-06-17'
+meta:
+- name: keywords
+  content: 前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、项目前期准备、antd更换主题色，路由鉴权，接口拦截、更改默认端口号、插件TS报错、配置绝对路径
+---
+
 # React爬坑指南
 
 > 用于记录在使用React中遇到的问题或者使用过程中的一些封装，吐槽一下，加上TS，不熟悉的话真是一步一个坑。
@@ -5,6 +15,112 @@
 <div style="text-align: center;">
   <img src="./../assets/tremble.jpg" alt="萌新瑟瑟发抖">
 </div>
+
+## 构建项目问题
+
+### 更改默认端口号
+
+这里仅提供一种我使用的方法，其他方法有待大家自己去探寻
+
+全局安装 `cross-env -> npm install cross-env -g` 然后在package.json中配置如下：
+
+```js
+"scripts": {
+    "start": "cross-env PORT=5000 react-scripts start"
+}
+```
+
+此时默认端口号成功改为了5000
+
+### 插件TS报错
+
+问题描述：引入 typescript 后，安装各种插件，ts语法检查报错。
+
+举例说明：这里我们以 react-router-dom 为例，说下这种情况该如何处理。
+
+解释说明：每一个支持ts的引入插件，都有一个 @types/xxx 的包，需要安装相关依赖才能正常在 ts 模式下使用，比如上述例子需要安装 `yarn add @types/react-router-dom -D` 才能正常使用
+
+更改`index.tsx`代码如下：
+
+```js
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+更改为：
+
+```js
+import Route from './router/index';
+const render = (Component: any) => {
+  ReactDOM.render(
+      <Component />, 
+      document.getElementById('root') as HTMLElement
+  )
+}
+render(Route)
+```
+
+### 配置绝对路径
+
+配置 `tsconfig.json`，增加：
+
+```json
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}
+```
+
+## antd配置主题色
+
+### 问题说明
+
+<span style="color: #999">这里直接改webpack就可以了，可以不像我这样引入插件做，因为当时遇到了一个坑，就引入了插件（引入坑依旧在），改好了之后就直接用的这种方式没在改回去，以下是具体实现：</span>
+
+遇到的问题：addLessLoader 里必须要包一层 lessOptions，否则报错
+
+### 前期准备
+
+> yarn add antd react-app-rewired customize-cra babel-plugin-import less less-loader
+
+### 具体操作
+
+更改`package.json`文件
+
+```json
+"scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+}
+```
+
+在根目录下创建一个`config-overrides.js`的文件
+
+```js
+const { override, fixBabelImports, addLessLoader } = require('customize-cra');
+
+module.exports = override(
+    fixBabelImports('import', {
+      libraryName: 'antd',
+      libraryDirectory: 'es',
+      style: true  // 这里一定要写true，css和less都不行哦
+    }),
+    addLessLoader({
+        // 必须要包一层lessOptions，否则报错
+        lessOptions: {
+            javascriptEnabled: true,
+            // 更改主题
+            modifyVars: { '@primary-color': '#1DA57A' }
+        }
+    })
+)
+```
+
+### 推荐实现
+
+用 `yarn run eject` 打开webpack的控制权，然后在less-loader中进行配置，配置方法和上述大体一致，这样就无需引入插件了
 
 ## 路由鉴权
 

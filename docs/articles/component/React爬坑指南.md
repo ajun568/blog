@@ -2,10 +2,10 @@
 title: 'React爬坑指南'
 description: 'Deeruby: 用于记录在使用React中遇到的问题或者使用过程中的一些封装，包括项目前期准备，antd更换主题色，路由鉴权，接口拦截等'
 date: '2019-06-01'
-updated: '2020-06-17'
+updated: '2020-06-26'
 meta:
 - name: keywords
-  content: 前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、项目前期准备、antd更换主题色，路由鉴权，接口拦截、更改默认端口号、插件TS报错、配置绝对路径
+  content: 前端、博客、deeruby、Deeruby、deeruby.com、yijun、yijun's blog、项目前期准备、antd更换主题色，路由鉴权，接口拦截、更改默认端口号、插件TS报错、配置绝对路径、React基础、React入门指南
 ---
 
 # React爬坑指南
@@ -409,3 +409,215 @@ export function login(params: any) {
 }
 
 ```
+
+## 入门指南
+
+> 此处记录内容为最基础的使用部分，如无必要，跳过此部分即可，详细内容请查找官方文档
+
+### 注释写法
+
+```js
+{
+  /* 
+    xxx
+    xxx
+  */
+}
+```
+
+```js
+{
+  // xxx
+  // xxx
+}
+```
+
+### 类的写法
+
+请用className，因为class会和类同名，不建议用class定义样式
+
+### React input 的双向绑定
+
+<span style="color: #999;">state部分：页面的变量都存在于此处</span>
+
+```js
+constructor(props) {
+  super(props)
+  this.state = {
+    value: ''
+  }
+}
+```
+
+<span style="color: #999;">render部分：value用来绑定input的值，onChange用来绑定输入框变化的事件，绑定this用于事件处理中可以找到this，而不是undefined</span>
+
+```js
+<input
+  value={this.state.value}
+  onChange={this.handleOnChange.bind(this)}
+/>
+```
+
+<span style="color: #999;">js部分：用于实现输入框逻辑，改变state中的值必须使用`this.setState()`</span>
+
+```js
+  handleOnChange(e) {
+    this.setState({value: e.target.value})
+  }
+```
+
+### 循环dom结构
+
+<span style="color: #999;">在render中用{}来写逻辑函数，用map去循环数组，这里的key有ID时候用ID</span>
+
+```js
+<section>
+  {
+    this.state.arr.map(item => {
+      return (
+        <div key={item.id}>{item}</div>
+      )
+    })
+  }
+</section>
+```
+
+### state值的改变
+
+用setState进行值的更改，用 `let { value } = this.state` 取值，react中不允许直接改变state中的值，更改值时做如下操作：
+
+数组中push一个值：
+
+```js
+let arr = [...this.state.arr, {id: 1, value: 'xxx'}]
+this.setState({ arr })
+```
+
+数组中删除一个值：
+
+```js
+let { arr } = this.state
+arr.splice(index, 1)
+this.setState({ arr })
+```
+
+### react 中的 v-html
+
+```js
+<div dangerouslySetInnerHTML={{ __html: value }} />
+```
+
+### 生命周期函数
+
+<b>Mounted</b>
+
+第一次挂载执行：componentWillMount，componentDidMount
+
+顺序：componentWillMount -> render -> componentDidMount
+
+componentDidMount: 一般用于做接口请求
+
+<b>Updated</b>
+
+shoudComponentUpdate: 需要返回一个boolean值，告诉组件能否进行更新
+
+用于限制不必要的更新，避免影响性能。
+
+```js
+shoudComponentUpdate(nextProps, nextState) {
+  if (nextProps.content !== this.props.content) {
+    return true;
+  } else {
+    return false;
+  }
+}
+```
+
+顺序：componentWillUpdate -> render -> componentDidUpdate
+
+子组件级别 ～ componentWillReceiveProps
+
+在子组件中执行（需接收参数）且在update时首先执行
+
+第一次渲染在父组件中不会执行，已经渲染过会调用该生命周期函数
+
+<b>Unmount</b>
+
+componentWillUnmount -> 组件被从页面中移除
+
+### 简单的组件传值
+
+父组件向子组件通讯：
+
+父组件：
+
+```js
+<div content={this.state.content} clickContent={this.clickContent.bind(this)}></div>
+```
+
+子组件：
+
+```js
+<div onClick={this.handleClick.bind(this)}>{this.props.content}</div>
+
+handleClick() {
+  this.props.clickContent(this.props.content)
+}
+```
+
+### PropTypes做组件类型声明
+
+```js
+import PropTypes from 'prop-types';
+
+MyComponent.propTypes = {
+  // 基础用法
+  content: PropTypes.string
+  // 常见类型
+  string & number & bool & array & object & func
+  // 枚举类型
+  enum: PropTypes.oneOf(['News', 'Photos'])
+  // string || number
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  // 必填项
+  content: PropTypes.string.isRequired
+}
+
+// 给定默认值
+MyComponent.defaultProps = {
+  content: 'default content'
+}
+```
+
+### 小技巧之点击label聚焦input输入框
+
+<span style="color: #999;">label 的 htmlFor 方法设置为 input 的 ID</span>
+
+```js
+<label htmlFor="focusInput">focusInput</label>
+<input
+  id="focusInput"
+  value={this.state.value}
+  onChange={this.handleOnChange.bind(this)} />
+```
+
+### 方法的绑定建议写在constructor中，减少性能的损耗
+
+```js
+constructor(props) {
+  super(props)
+  this.handleClick = this.handleClick.bind(this)
+}
+```
+
+## 浅谈虚拟DOM
+
+<b>什么是虚拟DOM？</b>
+
+其实虚拟DOM就是一个js对象，用它来模拟DOM结构。
+
+传统方式为有更改时，比对DOM结构，更新不同点。而虚拟DOM则比对的是js，更新DOM。在js中计算比对js对象远比计算比对DOM更节约资源，性能更好。
+
+<b>为什么循环中的key不建议用index？</b>
+
+举个例子，从第0个元素中插入一个元素，index会造成，从第0个开始全部重新渲染，因为index都发生了改变，所以这里建议用ID作为key的唯一值。

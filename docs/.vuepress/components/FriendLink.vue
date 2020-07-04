@@ -18,6 +18,15 @@
         <div class="desc">Lionad-Guirotar ～ http://www.lionad.art</div>
       </section>
     </a>
+    <a target="_blank" href="https://dinglin26.github.io/blog">
+      <section class="friend-container mt20">
+        <div class="image-container">
+          <img :src="`${$withBase('/image/smalin.jpeg')}`" alt="Roki's Blog">
+        </div>
+        <div class="name">Smalin</div>
+        <div class="desc">Smalin's Blog ～ https://dinglin26.github.io/blog</div>
+      </section>
+    </a>
   </div>
 </template>
 

@@ -21,10 +21,19 @@
     <a target="_blank" href="https://dinglin26.github.io/blog">
       <section class="friend-container mt20">
         <div class="image-container">
-          <img :src="`${$withBase('/image/smalin.jpeg')}`" alt="Roki's Blog">
+          <img :src="`${$withBase('/image/smalin.jpeg')}`" alt="Smalin's Blog">
         </div>
         <div class="name">Smalin</div>
         <div class="desc">Smalin's Blog ～ https://dinglin26.github.io/blog</div>
+      </section>
+    </a>
+    <a target="_blank" href="https://dirgeest.com">
+      <section class="friend-container mt20">
+        <div class="image-container">
+          <img :src="`${$withBase('/image/yang.jpeg')}`" alt="BrotherYang's Blog">
+        </div>
+        <div class="name">墨白の雨落弦断</div>
+        <div class="desc">BrotherYang's Blog ～ https://dirgeest.com</div>
       </section>
     </a>
   </div>

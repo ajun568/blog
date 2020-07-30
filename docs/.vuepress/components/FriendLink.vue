@@ -18,13 +18,13 @@
         <div class="desc">Lionad-Guirotar ～ http://www.lionad.art</div>
       </section>
     </a>
-    <a target="_blank" href="https://dinglin26.github.io/blog">
+    <a target="_blank" href="https://smalin.cn">
       <section class="friend-container mt20">
         <div class="image-container">
           <img :src="`${$withBase('/image/smalin.jpeg')}`" alt="Smalin's Blog">
         </div>
         <div class="name">Smalin</div>
-        <div class="desc">Smalin's Blog ～ https://dinglin26.github.io/blog</div>
+        <div class="desc">undefined ～ https://smalin.cn</div>
       </section>
     </a>
     <a target="_blank" href="https://dirgeest.com">
